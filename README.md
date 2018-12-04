@@ -1,5 +1,9 @@
 # docker-for-php-developers
 
+## Files and videos
+[Link](https://gumroad.com/d/60d1328259cbf9b23dcc371f0e8772fa)
+
+
 ## Basics
 
 Para dar build(criar) na imagem em basics/docker-phpinfo e rodar o container dessa imagem
@@ -18,3 +22,9 @@ $ docker-compose up -d --build
 # Now list all the containers running
 $ docker-compose ps
 ```
+
+## LAMP
+
+Na imagem php do docker ja vem com um script para instalar extensoes php: docker-php-ext-install
+
+WORDIR no dockerfile muda o diretorio que o container inicial
