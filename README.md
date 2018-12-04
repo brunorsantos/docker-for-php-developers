@@ -28,3 +28,18 @@ $ docker-compose ps
 Na imagem php do docker ja vem com um script para instalar extensoes php: docker-php-ext-install
 
 WORDIR no dockerfile muda o diretorio que o container inicial
+
+
+## Laravel
+
+Build de uma imagem de um Dockerfile, em que o arquivo está em uma pasta direfente, considerando o contexto (pasta onde será considerada a raiz do copy) a pasta atual
+
+```sh
+docker build -t docker-laravel -f docker\Dockerfile
+```
+
+Executando o container criado acima:
+
+```sh
+docker run -d -p 8080:80 docker-laravel
+```
